@@ -23,36 +23,39 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                >
+
 
                 <TextView
                     android:id="@+id/textViewName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="35dp"
                     android:fontFamily="sans-serif-black"
                     android:text="New Arrival"
                     android:textColor="#005DFF"
                     android:textSize="24sp"
-                    app:layout_constraintBottom_toTopOf="@+id/textViewVersion"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.08"
-                    app:layout_constraintStart_toStartOf="parent" />
-
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView2" />
 
                 <TextView
                     android:id="@+id/textViewVersion"
                     android:layout_width="wrap_content"
-                    android:layout_height="38dp"
-                    android:layout_marginBottom="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="50dp"
                     android:maxLines="2"
                     android:shadowColor="@android:color/background_dark"
                     android:text="Local Events"
                     android:textColor="@android:color/widget_edittext_dark"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toTopOf="@+id/textViewName"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/textViewName" />
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <ImageView
                     android:id="@+id/imageView"
@@ -64,6 +67,29 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Collection"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:maxLines="3"
+                    android:textColor="#4A5E4747"
+                    android:text="Lorem Ipsum is simply \ndummy text of the printing\nand typesetting industry."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

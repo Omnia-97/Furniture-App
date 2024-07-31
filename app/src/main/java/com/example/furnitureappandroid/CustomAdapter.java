@@ -10,6 +10,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestOptions;
+
 import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
@@ -38,7 +42,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         DataModel dataModel = dataSet.get(position);
         textViewName.setText(dataModel.getName());
         textViewVersion.setText(dataModel.getVersion());
-        imageViewIcon.setImageResource(dataModel.getImage());
+       //glide image
+        Glide.with(mContext).load(dataModel.getImage()).apply(
+                RequestOptions.bitmapTransform(new RoundedCorners(20))
+        ).into(imageViewIcon);
 
     }
 

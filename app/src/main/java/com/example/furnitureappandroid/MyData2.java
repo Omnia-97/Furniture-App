@@ -1,16 +1,16 @@
 package com.example.furnitureappandroid;
 
-public class MyData {
+public class MyData2 {
     static String[] nameArray = {
-            "New Arrival"
-            ,"Test 2"
-            ,"Test 3"
+            "Secondary "
+            ,"Test 5"
+            ,"Test 6"
     };
 
     static String[] versionArray = {
-            "Best furniture"
-            ,"Subscribe"
-            ,"Like"
+            "500$",
+            "120$",
+            "1900$"
     };
     static  int[] id_ ={
             1
@@ -18,9 +18,9 @@ public class MyData {
             ,3
     };
     static int[] drawableArray= {
-            R.drawable.fur4,
-            R.drawable.fur2,
+            R.drawable.img,
             R.drawable.fur3,
+            R.drawable.fur5,
 
     };
 }
